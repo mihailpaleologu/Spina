@@ -1,15 +1,15 @@
 module Spina
   module ApplicationHelper
           def resource_name
-             :user
+             :participant
            end
 
            def resource
-             @resource ||= User.new
+             @resource ||= Participant.new
            end
 
            def devise_mapping
-             @devise_mapping ||= Devise.mappings[:user]
+             @devise_mapping ||= Devise.mappings[:participant]
            end
     def current_account
       @current_account ||= Account.first
