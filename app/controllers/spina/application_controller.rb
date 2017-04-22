@@ -4,6 +4,7 @@ module Spina
     protect_from_forgery with: :exception
 
     include ApplicationHelper
+     helper_method :resource, :resource_name, :devise_mapping
 
     private
 
